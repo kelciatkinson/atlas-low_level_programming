@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- * Comments are here 
+ * Comments are here
  */
 int main(void)
 {
