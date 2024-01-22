@@ -1,6 +1,7 @@
 #include <stdio.h>
 /*
- * Comments are here
+  * main - prints out size
+  * Return: 0
  */
 int main(void)
 {
