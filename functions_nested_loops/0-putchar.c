@@ -6,8 +6,6 @@
  */
 int main(void)
 {
-	char h[] = "";
-	int s = sizeof(h);
 	int i;
 
 	for (i = 0; i < s; i++)
