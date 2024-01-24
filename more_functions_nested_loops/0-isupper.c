@@ -7,6 +7,8 @@
  * Return: 0
  */
 
+int _isupper(int c);
+
 int main(char)
 {
 	char letter;
