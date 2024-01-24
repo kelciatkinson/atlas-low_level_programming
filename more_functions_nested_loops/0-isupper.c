@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * c - check for uppercase letters
+ * _isupper - check for uppercase letters
  *
  * Return: 0
  */
