@@ -6,7 +6,7 @@
  * Return: 0
  */
 
-int main()
+int main(char)
 {
 	char letter;
 	if (letter >= 'A' && letter <= 'Z')
