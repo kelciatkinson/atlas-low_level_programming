@@ -7,9 +7,8 @@
  * Return: 0
  */
 
-int main(char)
+int _isupper(int c)
 {
-	char letter;
 	if (letter >= 'A' && letter <= 'Z')
 		return 1;
 	else
