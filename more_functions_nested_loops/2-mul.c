@@ -15,9 +15,6 @@
 
 int mul(int a, int b)
 {
-	for (a)
-	{
-		a * b;
-	}
+	a * b;
 	return (0);
 }
