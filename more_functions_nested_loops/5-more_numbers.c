@@ -8,11 +8,11 @@
 
 void more_numbers(void)
 {
-        char i = '0';
+        int i = 0;
 	int count = 1;
 	for (count = 1; count < 11; count++)
 	{
-		for (i = '0'; i <= 14; i++)
+		for (i = 0; i <= 14; i++)
 		{
 			if (i >= 10)
 			{
@@ -25,6 +25,6 @@ void more_numbers(void)
 				_putchar(i)
 			}
 		}
-        	_putchar('n');
+        	_putchar('\n');
 	}
 }
