@@ -17,7 +17,6 @@ void print_line(int n)
 	{
 		for (n)
 		{
-			line = line * n;
 			_putchar(line);
 		}
         }
