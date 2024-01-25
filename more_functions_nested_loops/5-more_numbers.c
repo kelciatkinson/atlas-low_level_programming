@@ -12,9 +12,18 @@ void more_numbers(void)
 	int count = 1;
 	for (count = 1; count < 11; count++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		for (i = '0'; i <= '14'; i++)
 		{
-			_putchar(i);
+			if (i >= 10)
+			{
+				(i / 10) + 0;
+				_putchar(i)
+			}
+			if (i >= 10)
+			{
+				(i % 10) + 0;
+				_putchar(i)
+			}
 		}
         	_putchar('n');
 	}
