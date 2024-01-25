@@ -13,6 +13,7 @@ void print_line(int n)
 	{
 		_putchar('\n);
 	}
+	else
 	{
 		line = line * n;
 		_putchar(line);
