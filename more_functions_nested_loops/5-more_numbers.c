@@ -16,12 +16,12 @@ void more_numbers(void)
 		{
 			if (i >= 10)
 			{
-				i = (i / 10) + 0;
+				i = (i / 10) + '0';
 				_putchar(i);
 			}
 			else if (i >= 10)
 			{
-				i = (i % 10) + 0;
+				i = (i % 10) + '0';
 				_putchar(i);
 			}
 		}
