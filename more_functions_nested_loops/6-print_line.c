@@ -15,8 +15,11 @@ void print_line(int n)
 	}
 	else
 	{
-		line = line * n;
-		_putchar(line);
+		for (n)
+		{
+			line = line * n;
+			_putchar(line);
+		}
         }
 	_putchar('\n');
 }
