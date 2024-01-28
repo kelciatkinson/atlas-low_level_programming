@@ -20,7 +20,7 @@ void print_line(int n)
 		{
 			_putchar(line);
 		}
+		_putchar('\n');
         }
-	_putchar('\n');
 }
 
