@@ -9,6 +9,7 @@
 void print_line(int n)
 {
         char line = '_';
+
 	int i = 0;
 
         if (n <= 0)
