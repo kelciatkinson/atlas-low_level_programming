@@ -16,7 +16,10 @@ void print_line(int n)
 	}
 	else
 	{
-		_putchar(%c*i, n, line);
+		for (n > 0; ++n)
+		{
+			_putchar(line)
+		}
         }
 	_putchar('\n');
 }
