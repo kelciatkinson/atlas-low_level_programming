@@ -10,6 +10,7 @@
 void print_line(int n)
 {
         char line = '_';
+	int i = 0
 
         if (n <= 0)
 	{
@@ -17,7 +18,7 @@ void print_line(int n)
 	}
 	else
 	{
-		for (int i = 0; i <= n; i++)
+		for (int i; i <= n; i++)
 		{
 			_putchar(line);
 			i += 1;
