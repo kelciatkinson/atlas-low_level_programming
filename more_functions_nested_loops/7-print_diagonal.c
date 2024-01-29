@@ -20,6 +20,13 @@ void print_diagonal(int n)
 	else
 	{
 		for (space = 0; space < n; space++)
-			_putchar(32);	
+		{
+			_putchar(32);
+		}
+		for (line = 0; line < space; line++)
+		{
+			_putchar(92);
+		}
+
 	}
 }
