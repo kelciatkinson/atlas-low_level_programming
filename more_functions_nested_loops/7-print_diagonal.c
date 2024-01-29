@@ -24,8 +24,8 @@ void print_diagonal(int n)
 			for (slash = 0; slash < space; slash++)
 			{
 				_putchar(32);
-				_putchar(92);
 			}
+			_putchar(92);
 		}
 	}
 }
