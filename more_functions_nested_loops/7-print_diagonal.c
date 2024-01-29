@@ -18,8 +18,7 @@ void print_diagonal(int n)
 		_putchar('\n');
 	}
 	else
-	{
-		for (space = 0; space < n; space++)
+	{ for (space = 0; space < n; space++)
 		{
 			for (slash = 0; slash < space; slash++)
 			{
