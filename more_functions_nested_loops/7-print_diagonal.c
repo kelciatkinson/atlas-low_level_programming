@@ -21,11 +21,11 @@ void print_diagonal(int n)
 	{
 		for (space = 0; space < n; space++)
 		{
-			_putchar(32);
 			for (slash = 0; slash < space; slash++)
 			{
+				_putchar(32);
 				_putchar(92);
 			}
-			}
+		}
 	}
 }
