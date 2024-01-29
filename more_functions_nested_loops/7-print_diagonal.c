@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagaonal- here is a function
+ * print_diagonal- here is a function
  *
  * @n: description
  *
