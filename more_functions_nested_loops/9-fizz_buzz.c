@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz- here is a description
+ * main- here is a description
  *
  * Return: 0
  */
 
-int fizz_buzz(void)
+int main(void)
 {
 	int i;
 
