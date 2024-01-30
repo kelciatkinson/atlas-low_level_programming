@@ -3,10 +3,10 @@
 /**
  * fizz_buzz- here is a description
  *
- * Return: void
+ * Return: 0
  */
 
-int main()
+int main(void)
 {
 	int i;
 	for (i = 1; i <= 100; i++)
@@ -20,4 +20,5 @@ int main()
 			printf("Buzz");
 		}
 	}
+	return (0);
 }
