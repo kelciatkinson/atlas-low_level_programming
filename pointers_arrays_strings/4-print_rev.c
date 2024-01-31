@@ -21,6 +21,6 @@ void print_rev(char *s)
 		first++;
 		last--;
 	}
-	printf("%s", s);
+	printf("%s\n", s);
 
 }
