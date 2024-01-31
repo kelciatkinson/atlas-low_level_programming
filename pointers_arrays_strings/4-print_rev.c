@@ -20,6 +20,6 @@ void print_rev(char *s)
 		*last = swap;
 		first++;
 		last--;
-		printf("%c", s);
+		printf("%s", s);
 	}
 }
