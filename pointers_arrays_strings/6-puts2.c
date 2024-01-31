@@ -10,6 +10,7 @@
 void puts2(char *str)
 {
 	int count = 0;
+	int i = 0;
 
 	while (count >= 0)
 	{
@@ -19,8 +20,6 @@ void puts2(char *str)
 		}
 		count++;
 	}
-	int i = 0;
-
 	while (i < count)
 	{
 		printf("%c", str[i]);
