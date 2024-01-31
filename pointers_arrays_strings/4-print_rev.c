@@ -9,5 +9,17 @@
 
 void print_rev(char *s)
 {
-	printf("%c\n", strrev(s));
+	int len = strlen(s);
+	char *first = s;
+	char *last = s + len - 1;
+
+	while (first < last)
+	{
+		char swap = *first;
+		*first = *last;
+		*last = swap;
+		first++;
+		last--;
+		printf("%c", s);
+	}
 }
