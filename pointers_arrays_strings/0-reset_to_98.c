@@ -2,7 +2,7 @@
 /**
  * reset_to_98- here is the function
  *
- * @n:
+ * @n: int
  * 
  * Return: 0
  */
