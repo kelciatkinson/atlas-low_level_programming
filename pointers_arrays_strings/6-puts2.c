@@ -9,5 +9,22 @@
 
 void puts2(char *str)
 {
-	for(str ; )
+	int count = 0;
+	while (count >= 0)
+	{
+		if (s[count] == '\0')
+		{
+			break;
+		}
+		count++;
+	}
+
+	int i = 0;
+	while (i < count)
+	{
+		printf("%c", str[i]);
+		i++;
+		i++;
+	}
+	putchar('\n');
 }
