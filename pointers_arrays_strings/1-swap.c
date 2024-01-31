@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * swap_int- here is the function
  *
@@ -13,4 +14,3 @@ void swap_int(int *a, int *b)
 	*a = &b;
 	*b = swap;
 }
-
