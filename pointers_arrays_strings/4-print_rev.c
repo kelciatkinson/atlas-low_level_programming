@@ -19,7 +19,7 @@ void print_rev(char *s)
 		}
 		i++;
 	}
-	for (i--; i >= 0; i--)
+	for (; i >= 0 ;i--)
 	{
 		printf("%c", s[i]);
 	}
