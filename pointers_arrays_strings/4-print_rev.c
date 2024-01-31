@@ -9,11 +9,11 @@
 
 void print_rev(char *s)
 {
-	int len;
+	int len = 0;
 	char *first = s;
 	char *last = s + len - 1;
 
-	for (len = 0; s[len] != '\0'; len++)
+	for (len; s[len] != '\0'; len++)
 	{
 		printf("%d\n", len);
 	}
