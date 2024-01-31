@@ -9,22 +9,19 @@
 
 void print_rev(char *s)
 {
-	int len = 0;
-	char *first = s;
-	char *last = s + len - 1;
-
-	for (len; s[len] != '\0'; len++)
+	int i;
+	
+	while (i >= 0)
 	{
-		printf("%d\n", len);
+		if (s[i] == '\0')
+		{
+			break;
+		}
+		i++;
 	}
-
-	while (first < last)
+	for (i--; i >= 0; i--)
 	{
-		char swap = *first;
-		*first = *last;
-		*last = swap;
-		first++;
-		last--;
+		printf("%s", s[i]
 	}
-	printf("%s\n", s);
+	printf("\n")
 }
