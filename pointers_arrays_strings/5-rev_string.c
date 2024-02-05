@@ -12,7 +12,7 @@ void rev_string(char *s)
         int i = 0;
 	int n = 0;
 	int x = 0;
-	char *s;
+	char *st;
 	char swap;
 
         while (i >= 0)
@@ -28,9 +28,9 @@ void rev_string(char *s)
         {
 		for (x = n + 1; x > 0; x++)
 		{
-			swap = *(s + x);
-			*(s + x) = *(s + (x - 1));
-			*(s + (x - 1)) = swap;
+			swap = *(st + x);
+			*(st + x) = *(st + (x - 1));
+			*(st + (x - 1)) = swap;
 		}
         }
 }
