@@ -12,24 +12,20 @@ void rev_string(char *s)
         int i = 0, n, x;
 	char *st;
 	char swap;
+	while (*(s + last) != '\0')
+	{
+		last++;
+	}
 
-        while (i >= 0)
-        {
-                if (s[i] == '\0')
-                {
-                        break;
-                }
-                i++;
-        }
-	st = s;
+	last -= 1;
+	first = 0;
 
-        for (n = 0; n < (i - 1); i++)
-        {
-		for (x = n + 1; x > 0; x--)
-		{
-			swap = *(st + x);
-			*(st + x) = *(st + (x - 1));
-			*(st + (x - 1)) = swap;
-		}
-        }
+	while (last > first)
+	{
+		swap = s[first];
+		s[first] = s[last];
+		s[last] = swap;
+		first++;
+		last--;
+	}
 }
