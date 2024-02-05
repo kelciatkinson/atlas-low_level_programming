@@ -19,7 +19,7 @@ char *_strcpy(char *dest, char *src)
 		dest[i] = *src;
 		i++;
 		src++;
-		while (*src == '\0')
+		if ( ;*src == '\0'; )
 		{
 			break;
 		}
