@@ -23,9 +23,9 @@ void rev_string(char *s)
         }
 	st = s;
 
-        for (n = 0; n < (i - 1) ; i++)
+        for (n = 0; n < (i - 1); i++)
         {
-		for (x = n + 1; x > 0; x++)
+		for (x = n + 1; x > 0; x--)
 		{
 			swap = *(st + x);
 			*(st + x) = *(st + (x - 1));
