@@ -9,9 +9,9 @@
 
 void rev_string(char *s)
 {
-        int i = 0, n, x;
-	char *st;
-	char swap;
+        int first, swap;
+	int last = 0;
+
 	while (*(s + last) != '\0')
 	{
 		last++;
