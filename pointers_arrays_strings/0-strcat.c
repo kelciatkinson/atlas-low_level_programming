@@ -12,5 +12,21 @@ include "main.h"
 
 char *_strcat(char *dest, char *src)
 {
-	return ();
+	int i;
+	int x;
+
+	for (i = 0 ; dest[i] != '\0' ; i++)
+	{
+		break;
+	}
+
+	for (x = 0 ; src[x] != '\0' ; x++)
+	{
+	dest[i] = src[x];
+		i++;
+	}
+
+	dest[i] = '\0';
+
+	return (dest);
 }
