@@ -18,7 +18,7 @@ int _atoi(char *s)
 	{
 		if (s[i] == '-')
 		{
-			p *= -1;
+			x = -1;
 		}
 
 		if (s[i] > 47 && s[i] < 58)
@@ -37,7 +37,7 @@ int _atoi(char *s)
 
 	}
 
-	if (p < 0)
+	if ( x < 0)
 	{
 		n *= -1;
 	}
