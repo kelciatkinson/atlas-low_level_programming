@@ -10,6 +10,7 @@
 void rev_string(char *s)
 {
         int i = 0;
+	int n = 0;
 
         while (i >= 0)
         {
@@ -19,9 +20,14 @@ void rev_string(char *s)
                 }
                 i++;
         }
-        for (--i; i >= 0 ; i--)
+
+        for (n = 0; n < (i - 1) ; i++)
         {
-                printf("%c", s[i]);
+		for (x = n + 1; x > 0; x++)
+		{
+			swap = *(s + x);
+			*(s + x) = *(s + (x - 1));
+			*(s + (x - 1)) = swap;
+		}
         }
-        printf("\n");
 }
