@@ -1,12 +1,13 @@
 #include "main.h"
 
-/** 
+/**
  * _atoi- here is a description
  *
  * @s: here is a parameter
  *
  * Return: n
  */
+
 int _atoi(char *s)
 {
 	int i;
@@ -17,13 +18,23 @@ int _atoi(char *s)
 	{
 		if (s[i] == '-')
 		{
-			x *= -1;
+			p *= -1;
 		}
+
+		if (s[i] > 47 && s [i] < 58)
+		{
+			if (n < 0)
+			{
+				n = (n * 10) - (s[i] - '0');
+			}
+		}
+
 	}
 
-	if (x < 0)
+	if (p < 0)
 	{
 		n *= -1;
 	}
+
 	return (n);
 }
