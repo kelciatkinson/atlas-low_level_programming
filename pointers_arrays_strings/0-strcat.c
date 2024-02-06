@@ -1,8 +1,7 @@
 #include "main.h"
 
-/**
- *
- * *_strcat- here is a description
+/***
+ * _strcat- here is a description
  *
  * @dest: here is the first parameter
  * @src: here is the second parameter
