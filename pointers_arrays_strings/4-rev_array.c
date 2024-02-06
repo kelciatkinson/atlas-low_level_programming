@@ -9,13 +9,12 @@
  * Return: void
  */
 
-void reverse_array( int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int i;
 	int x = 0;
 
 	n = n - 1;
-	
 	while (x <= n)
 	{
 		i = a[x];
