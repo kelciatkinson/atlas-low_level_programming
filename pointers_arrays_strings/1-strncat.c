@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * *_strncat- here is a description
+ *  _strncat- here is a function
  *
- * @dest: char
- * @src: char
- * @n: int
+ *  @dest: here's a parameter
+ *  @src: here's another parameter
+ *  @n: bytes
  *
  * Return: char
  */
@@ -13,20 +13,19 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
-	int x = 0;
+	int x;
 
-	while (*(dest + i) != '\0')
+	while (dest[i] != '\0')
 	{
 		i++;
 	}
 
-	while (x >= 0)
+	for (x = 0; x < n && src[x] != '\0'; x++, i++)
 	{
-		*(dest + i) = *(src + x);
-		if (*(src + x) == '\0')
-			break;
-		i++;
-		x++;
+		dest[i] = src[x];
 	}
+
+	dest[i] = '\0';
+	
 	return (dest);
 }
