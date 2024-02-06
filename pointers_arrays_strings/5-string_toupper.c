@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * string_toupper- here's a description
+ *
+ * @s: here's a parameter
+ *
+ * Return: s
+
 char *string_toupper(char *s)
 {
 	int i = 0;
