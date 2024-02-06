@@ -3,9 +3,9 @@
 /**
  * _strncpy- here is a description
  *
- * @dest:
- * @src:
- * @n:
+ * @dest: this is a parameter
+ * @src: and another
+ * @n: and another
  *
  * Return: char
  */
