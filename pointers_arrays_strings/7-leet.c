@@ -5,7 +5,7 @@
  *
  * @s: here's a parameter
  *
- * Return:
+ * Return: x
  */
 
 char *leet(char s)
