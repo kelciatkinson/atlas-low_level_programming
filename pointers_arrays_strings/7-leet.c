@@ -8,7 +8,7 @@
  * Return: x
  */
 
-char *leet(char s)
+char *leet(char *s)
 {
 	char *c = s;
 	char n[] = { 'a', 'e', 'o', 't', 'l' };
