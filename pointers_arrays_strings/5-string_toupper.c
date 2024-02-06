@@ -6,6 +6,7 @@
  * @s: here's a parameter
  *
  * Return: s
+ */
 
 char *string_toupper(char *s)
 {
