@@ -2,10 +2,8 @@
 
 /**
  * _sqrt_recursion- here is a description
- * square- here is another function
- *
+ * 
  * @n: here is a parameter
- * @i: here's another parameter
  *
  * Return: 0
  */
@@ -25,6 +23,15 @@ int _sqrt_recursion(int n)
 		return (square(n, 1));
 	}
 }
+
+/**
+ * square- here is another function
+ *
+ * @n: here is a parameter
+ * @i: here is another parameter
+ *
+ * Return: 0
+ */
 
 int square(int n, int i)
 {
