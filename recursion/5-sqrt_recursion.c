@@ -27,7 +27,7 @@ int square(int n, int i)
 
 /**
  * _sqrt_recursion- here is a description
- * 
+ *
  * @n: here is a parameter
  *
  * Return: 0
