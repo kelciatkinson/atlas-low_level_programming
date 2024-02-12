@@ -1,30 +1,6 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion- here is a description
- * 
- * @n: here is a parameter
- *
- * Return: 0
- */
-
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
-	{
-		return (-1);
-	}
-	else if (n == 0 || n == 1)
-	{
-		return (n);
-	}
-	else
-	{
-		return (square(n, 1));
-	}
-}
-
-/**
  * square- here is another function
  *
  * @n: here is a parameter
@@ -46,5 +22,29 @@ int square(int n, int i)
 	else
 	{
 		return (square(n, i + 1));
+	}
+}
+
+/**
+ * _sqrt_recursion- here is a description
+ * 
+ * @n: here is a parameter
+ *
+ * Return: 0
+ */
+
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+	{
+		return (-1);
+	}
+	else if (n == 0 || n == 1)
+	{
+		return (n);
+	}
+	else
+	{
+		return (square(n, 1));
 	}
 }
