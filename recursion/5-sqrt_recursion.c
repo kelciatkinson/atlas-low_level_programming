@@ -5,6 +5,7 @@
  * square- here is another function
  *
  * @n: here is a parameter
+ * @i: here's another parameter
  *
  * Return: 0
  */
