@@ -11,11 +11,16 @@
 
 int main(int  argc, char **argv)
 {
+	int n;
 	if (argc != 2)
 	{
 		printf("%s\n", "Error");
 		return (1);
 	}
-	printf("\n");
+	else
+	{
+		n = atoi(argv[1]) * atoi(argv[2]);
+		printf("%i\n", n);
+	}
 	return (0);
 }
