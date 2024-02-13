@@ -12,6 +12,7 @@
 int main(int argc, char **argv)
 {
 	int count = 0;
+	int sum;
 
 	if (argc < 2)
 	{
@@ -22,8 +23,11 @@ int main(int argc, char **argv)
 		while (count < argc)
 		{
 			count++;
+			printf("Error\n");
+			return (1);
 		}
+		sum = sum + atoi(argv[count]);
 	}
-	printf("%d", );
+	printf("%d", sum);
 	return(0);
 }
