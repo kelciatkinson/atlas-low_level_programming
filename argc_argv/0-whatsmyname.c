@@ -1,11 +1,17 @@
 #include "main.h"
 
 /**
- * whatsmyname- here is a description
+ * main- here is a description
  *
- * @i: here is a parameter
+ * @argc: here is a parameter
  *
  * Return: void
  */
 
-argv[0]
+void main(int argc, char **argv)
+{
+	if (argc > 0)
+	{
+		printf("%s", argv[0]);
+	}
+}
