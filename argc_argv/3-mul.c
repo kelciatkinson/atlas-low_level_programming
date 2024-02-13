@@ -12,6 +12,8 @@
 int main(int  argc, char **argv)
 {
 	int n;
+	int atoi(const char **argv);
+
 	if (argc != 3)
 	{
 		printf("%s\n", "Error");
@@ -19,7 +21,7 @@ int main(int  argc, char **argv)
 	}
 	else
 	{
-		n = argv[1] * argv[2];
+		n = atoi(argv[1]) * atoi(argv[2]);
 		printf("%i\n", n);
 	}
 	return (0);
