@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 {
 	int count = 0;
 	int sum;
-	int *atoi;
+	int atoi(const char *argv);
 
 	if (argc < 2)
 	{
@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 			printf("Error\n");
 			return (1);
 		}
-		sum = sum + *atoi(argv[count]);
+		sum = sum + atoi(argv[count]);
 	}
 	printf("%d", sum);
 	return(0);
