@@ -9,8 +9,9 @@
  * Return: 0
  */
 
-int main(int argc)
+int main(int argc, **argv)
 {
+	(void) argv;
 	printf("%i\n", argc - 1);
 	return (0);
 }
