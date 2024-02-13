@@ -19,7 +19,7 @@ int main(int  argc, char **argv)
 	}
 	else
 	{
-		n = atoi(argv[1]) * atoi(argv[2]);
+		n = argv[1] * argv[2];
 		printf("%i\n", n);
 	}
 	return (0);
