@@ -16,6 +16,6 @@ int main(int  argc, char **argv)
 		printf("%s\n", "Error");
 		return (1);
 	}
-	printf("\n", mul)
+	printf("\n");
 	return (0);
 }
