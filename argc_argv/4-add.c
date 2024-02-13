@@ -13,6 +13,7 @@ int main(int argc, char **argv)
 {
 	int count = 0;
 	int sum;
+	int atoi;
 
 	if (argc < 2)
 	{
