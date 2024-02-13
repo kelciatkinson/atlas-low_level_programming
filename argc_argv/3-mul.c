@@ -12,7 +12,7 @@
 int main(int  argc, char **argv)
 {
 	int n;
-	int atoi(const char **argv);
+	int atoi(const char *argv);
 
 	if (argc != 3)
 	{
