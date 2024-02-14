@@ -17,8 +17,7 @@ char *_strdup(char *str)
 	if (str == 0)
 		return (0);
 	dup = str;
-	lenstr = strlen(str);
-	for (lendup = 0; 
+	lenstr = strlen(str); 
 	lendup = strlen(dup);
 	while (lendup < lenstr)
 	{
