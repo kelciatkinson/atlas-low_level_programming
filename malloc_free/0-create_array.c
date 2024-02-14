@@ -19,6 +19,7 @@ char *create_array(unsigned int size, char c)
 
 	char array[ar];
 
-	return(ar);
+	return(array);
 	free(ar);
+	free(array);
 }
