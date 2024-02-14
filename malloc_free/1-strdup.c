@@ -15,9 +15,5 @@ char *_strdup(char *str)
 	
 	if (str == NULL)
 		return (NULL);
-	if ((i = 0); i < str; i++)
-		*newStr = str[i];
-	malloc(newStr);
-	return(newStr);
-	free(newStr);
+	newStr = malloc(sizeof(str));
 }
