@@ -10,15 +10,19 @@
 
 char *_strdup(char *str)
 {
-	char *newStr;
-	char i = 0;
-	
-	if (str == NULL)
-		return (NULL);
-	while (i < str)
-	{
+	char *dup;
+	int lenstr;
+	int lendup;
 
-		i++;
+	if (str == 0)
+		return (0);
+	dup = str;
+	lenstr = strlen(str);
+	lendup = strlen(dup);
+	while (lendup < lenstr)
+	{
+		dup = malloc((sizeof(char) * lenstr) + 1);
+		lendup++;
 	}
-	newStr = malloc(sizeof(*str));
+	return (*dup);
 }
