@@ -14,6 +14,8 @@ char *create_array(unsigned int size, char c)
 	char *ar;
 	int i;
 
+	ar[i];
+
 	while (i < size)
 		i++;
 
