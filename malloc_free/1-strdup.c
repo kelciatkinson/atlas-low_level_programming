@@ -18,6 +18,7 @@ char *_strdup(char *str)
 		return (0);
 	dup = str;
 	lenstr = strlen(str);
+	for (lendup = 0; 
 	lendup = strlen(dup);
 	while (lendup < lenstr)
 	{
