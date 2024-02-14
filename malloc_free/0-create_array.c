@@ -12,9 +12,9 @@
 char *create_array(unsigned int size, char c)
 {
 	char *ar;
-	char i;
+	int i;
 
-	for (char i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 		printf("%d\n, ar[i])
 
 	if (size == '\0')
