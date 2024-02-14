@@ -12,7 +12,6 @@ char *_strdup(char *str)
 {
 	char *dup;
 	int lenstr;
-	int lendup;
 	int i = 0;
 
 	if (str == 0)
