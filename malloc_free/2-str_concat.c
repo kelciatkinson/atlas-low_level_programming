@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 		i++;
 		j++;
 	}
-	newString = (char *)malloc((sizeof(char) * j) + 1);
+	newString = malloc((sizeof(char) * j) + 1);
 
 	newString[j] = '\0';
 	return (newString);
