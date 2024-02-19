@@ -20,8 +20,8 @@ char *_strdup(char *str)
 	{
 		lenstr++;
 	}
-	dup = malloc((sizeof(char) * lenstr) + 1);
-	while ( i < lenstr)
+	dup = (char *)malloc((sizeof(char) * lenstr) + 1);
+	while (i < lenstr)
 	{
 		dup[i] = str[i];
 		i++;
