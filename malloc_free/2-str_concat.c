@@ -13,6 +13,8 @@
 char *str_concat(char *s1, char *s2)
 {
 	int lenstr = 0;
+	int i = 0;
+	
 	if (s1 || s2 == 0)
 	{
 		return (0);
