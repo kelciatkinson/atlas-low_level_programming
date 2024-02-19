@@ -12,9 +12,10 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	if (== 0)
+	if (s1 || s2 == 0)
 	{
 		return (0);
 	}
-
+	malloc(
+	return (s1);
 }
