@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 			lenstr++;
 		}
 	}
-	s1 = (char *)malloc((sizeof(char) * lenstr) + 1);
+	newString = (char *)malloc((sizeof(char) * lenstr) + 1);
 	
 	while (i < lenstr)
 	{
