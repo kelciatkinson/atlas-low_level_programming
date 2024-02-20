@@ -21,9 +21,13 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == 0)
 		s2 = "";
 	while (s1[lenStr1] != '\0')
+	{
 		lenStr1++;
+	}
 	while (s2[lenStr2] != '\0')
+	{
 		lenStr2++;
+	}
 	len = lenStr1 + lenStr2;
 	newString = (char *)malloc((sizeof(char) * (len + 1)));
 
