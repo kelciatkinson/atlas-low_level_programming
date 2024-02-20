@@ -43,6 +43,6 @@ char *str_concat(char *s1, char *s2)
 		i++;
 		j++;
 	}
-	*newString[j] = '\0';
-	return (*newString);
+	newString[j] = '\0';
+	return (newString);
 }
