@@ -33,8 +33,8 @@ char *str_concat(char *s1, char *s2)
 
 	newString = (char *)malloc((sizeof(char) * (lenStr1 + lenStr2 + 1)));
 
-	if (newString == 0)
-		return (0);
+	if (newString == NULL)
+		return (NULL);
 
 	while (s1[i] != '\0')
 	{
