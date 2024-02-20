@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid- here is a description
+ * free_grid- here is a description
  *
  * @grid: here is a parameter
  * @height: here is another parameter
