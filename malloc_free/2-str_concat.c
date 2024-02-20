@@ -12,7 +12,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *newString[500];
+	char *newString;
 	int lenStr = 0;
 	int i = 0;
 	int j = 0;
@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 			lenStr++;
 		}
 	}
-	*newString = malloc((sizeof(char) * lenStr) + 1);
+	newString = (char *)malloc((sizeof(char) * lenStr) + 1);
 
 	while (s1[i] != '\0')
 	{
