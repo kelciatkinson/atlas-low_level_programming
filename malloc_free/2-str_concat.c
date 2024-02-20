@@ -10,6 +10,22 @@
  *
  * Return: char
  */
+int string_length(char *s1, char *s2)
+{
+        int lenStr1 = 0;
+        int lenStr2 = 0;
+
+        while (s1[lenStr1] != '\0')
+        {
+                lenStr1++;
+        }
+        while (s2[lenStr2] != '\0')
+        {
+                lenStr2++;
+        }
+
+        return (lenStr1 + lenStr2);
+}
 
 char *str_concat(char *s1, char *s2)
 {
@@ -45,21 +61,4 @@ char *str_concat(char *s1, char *s2)
 	}
 	newString[j] = '\0';
 	return (newString);
-}
-
-int string_length(char *s1, char *s2)
-{
-	int lenStr1 = 0;
-	int lenStr2 = 0;
-
-	while (s1[lenStr1] != '\0')
-        {
-                lenStr1++;
-        }
-        while (s2[lenStr2] != '\0')
-        {
-                lenStr2++;
-        }
-
-	return (lenStr1 + lenStr2);
 }
