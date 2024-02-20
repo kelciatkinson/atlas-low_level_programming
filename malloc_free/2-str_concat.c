@@ -18,7 +18,7 @@ char *str_concat(char *s1, char *s2)
 	int i = 0;
 	int j = 0;
 	
-	if (s1 || s2 == 0)
+	if (s1 == 0 || s2 == 0)
 	{
 		return (0);
 	}
