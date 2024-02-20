@@ -9,22 +9,6 @@
  *
  * Return: char
  */
-int string_length(char *s1, char *s2)
-{
-        int lenStr1 = 0;
-        int lenStr2 = 0;
-
-        while (s1[lenStr1] != '\0')
-        {
-                lenStr1++;
-        }
-        while (s2[lenStr2] != '\0')
-        {
-                lenStr2++;
-        }
-
-        return (lenStr1 + lenStr2);
-}
 
 char *str_concat(char *s1, char *s2)
 {
@@ -48,7 +32,6 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 	newString = (char *)malloc((sizeof(char) * (lenStr1 + lenStr2 + 1)));
-
 	if (newString == NULL)
 		return (NULL);
 	while (s1[i] != '\0')
