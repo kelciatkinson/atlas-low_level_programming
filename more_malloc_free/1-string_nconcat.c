@@ -13,7 +13,8 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, k;
+	unsigned int i, j;
+	unsigned int k = 0;
 	char *str;
 
 	if (s1 == NULL)
@@ -35,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (str == NULL)
 		return (NULL);
 
-	for (j = 0; k = 0; j < (i + n); j++)
+	for (j = 0; j < (i + n); j++)
 	{
 		if (j < i)
 		{
