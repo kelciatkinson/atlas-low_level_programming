@@ -22,11 +22,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (0);
 	}
-	while (s1[lenStr] != '\0')
+	while (s1[lenStr1] != '\0')
 	{
 		lenStr1++;
 	}
-	while (s2[lenStr] != '\0')
+	while (s2[lenStr2] != '\0')
 	{
 		lenStr2++;
 	}
