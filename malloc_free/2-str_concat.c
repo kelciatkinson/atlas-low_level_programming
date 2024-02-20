@@ -39,19 +39,12 @@ char *str_concat(char *s1, char *s2)
 	if (newString == 0)
 		return (0);
 
-	while (s1[i] != '\0')
+	for (i = 0; i < lenStr1; i++)
+		newStr[i] = s1[i];
+	for (j = 0; j < lenStr2; j++, i++)
 	{
-		newString[j] = s1[i];
-		i++;
-		j++;
+		newString[i] = s2[j];
 	}
-	i = 0;
-	while (s2[i] != '\0')
-	{
-		newString[j] = s2[i];
-		i++;
-		j++;
-	}
-	newString[j] = '\0';
+	newString[len] = '\0';
 	return (newString);
 }
