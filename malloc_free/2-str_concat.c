@@ -41,12 +41,16 @@ char *str_concat(char *s1, char *s2)
 
 	while (s1[i] != '\0')
 	{
-		newString[j++] = s1[i++];
+		newString[j] = s1[i];
+		i++;
+		j++;
 	}
 	i = 0;
 	while (s2[i] != '\0')
 	{
-		newString[j++] = s2[i++];
+		newString[j] = s2[i];
+		i++;
+		j++;
 	}
 	newString[j] = '\0';
 	return (newString);
