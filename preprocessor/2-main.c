@@ -8,6 +8,6 @@
 
 int main(void)
 {
-	_putchar(__BASE_FILE__);
+	puts(__BASE_FILE__);
 	return (0);
 }
