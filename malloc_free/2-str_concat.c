@@ -3,7 +3,6 @@
 
 /**
  * _str_concat- here is a description
- * string_length- here is a description
  *
  * @s1: here is a parameter
  * @s2: here is another parameter
@@ -30,9 +29,16 @@ int string_length(char *s1, char *s2)
 char *str_concat(char *s1, char *s2)
 {
 	char *newString;
-	int i = 0;
-	int j = 0;
+	int i, j, lenStr1, lenStr2 = 0;
 
+	while (s1[lenStr1] != '\0')
+	{
+		lenStr1++;
+	}
+	while (s2[lenStr2] != '\0')
+	{
+		lenStr2++;
+	}
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -41,11 +47,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	newString = (char *)malloc((sizeof(char) * (string_length(char *s1, char *s2) + 1)));
+	newString = (char *)malloc((sizeof(char) * (lenStr1 + lenStr2) + 1));
 
 	if (newString == NULL)
 		return (NULL);
-
 	while (s1[i] != '\0')
 	{
 		newString[j] = s1[i];
