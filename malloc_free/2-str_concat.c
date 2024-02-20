@@ -13,34 +13,42 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *newString;
+	int lenStr1 = 0;
+	int lenStr2 = 0;
 	int i = 0;
-	int counter;
-	int counter2;
 	int j = 0;
-	int lenStr1, lenStr2, len;
+	
+	if (s1 == 0 || s2 == 0)
+	{
+		return (0);
+	}
+	while (s1[lenStr1] != '\0')
+	{
+		lenStr1++;
+	}
+	while (s2[lenStr2] != '\0')
+	{
+		lenStr2++;
+	}
 
-	if (s1 != NULL)
+	newString = (char *)malloc((sizeof(char) * (lenStr1 + lenStr2 + 1)));
+
+	if (newString == 0)
+		return (0);
+
+	while (s1[i] != '\0')
 	{
-		for (counter = 0; s1[counter] != '\0'; counter++)
-			lenStr1++;
+		newString[j] = s1[i];
+		i++;
+		j++;
 	}
-	if (s2 != NULL)
+	i = 0;
+	while (s2[i] != '\0')
 	{
-		for (counter2 = 0; s2[counter2] != '\0'; counter2++)
-			lenStr2++;
+		newString[j] = s2[i];
+		i++;
+		j++;
 	}
-	len = lenStr1 + lenStr1;
-	newString = (char *)malloc(sizeof(char) * (len + 1));
-	if (newString == NULL)
-		return (NULL);
-	for (i = 0; i < lenStr1; i++)
-	{
-		newString[i] = s1[i];
-	}
-	for (j = 0; j < lenStr2; j++, i++)
-	{
-		newString[i] = s2[j];
-	}
-	newString[len] = '\0';
+	newString[j] = '\0';
 	return (newString);
 }
