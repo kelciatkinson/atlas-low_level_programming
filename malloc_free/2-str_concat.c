@@ -13,7 +13,8 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *newString;
-	int lenStr = 0;
+	int lenStr1 = 0;
+	int lenStr2 = 0;
 	int i = 0;
 	int j = 0;
 	
@@ -23,11 +24,13 @@ char *str_concat(char *s1, char *s2)
 	}
 	while (s1[lenStr] != '\0')
 	{
-		while (s2[lenStr] != '\0')
-		{
-			lenStr++;
-		}
+		lenStr1++;
 	}
+	while (s2[lenStr] != '\0')
+	{
+		lenStr2++;
+	}
+
 	newString = (char *)malloc((sizeof(char) * lenStr) + 1);
 
 	if (newString == 0)
