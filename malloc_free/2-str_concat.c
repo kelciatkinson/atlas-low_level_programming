@@ -3,6 +3,7 @@
 
 /**
  * _str_concat- here is a description
+ * string_length- here is a description
  *
  * @s1: here is a parameter
  * @s2: here is another parameter
