@@ -9,8 +9,7 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (dog == NULL)
-		return (1);
+	dog->d = d;
 	dog->name = name;
 	dog->email = email;
 	dog->age = age;
