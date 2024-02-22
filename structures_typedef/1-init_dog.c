@@ -10,7 +10,7 @@
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	struct dog my_dog;
-	dog->d = d;
+	my_dog->d = d;
 	dog->name = name;
 	dog->email = email;
 	dog->age = age;
