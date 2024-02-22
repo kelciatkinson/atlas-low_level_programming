@@ -9,10 +9,11 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog *d
-	{
-		char *name;
-		float age;
-		char *owner;
-	}
+	if (dog == NULL)
+		return (1);
+	dog->name = name;
+	dog->email = email;
+	dog->age = age;
+	dog->owner = owner;
+	return d;
 }
