@@ -4,6 +4,11 @@
 /**
  * init_dog- here is a description
  *
+ * @d: dog
+ * @name: name
+ * @age: age
+ * @owner: owner
+ *
  * Return: void
  */
 
