@@ -6,7 +6,7 @@
  * print_dog- here is a description
  *
  * @d: d
- * 
+ *
  * Return: void
  */
 
