@@ -1,0 +1,14 @@
+#include "function_pointers.h"
+
+/**
+ * array_iterator- here is a description
+ *
+ * @array: here is a parameter
+ * @size: here is another parameter
+ * @action: here is another parameter
+ */
+
+void array_iterator(int *array, size_t size, void (*action)(int))
+{
+	
+}
