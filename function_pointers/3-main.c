@@ -31,6 +31,12 @@ int main(int argc, char *argv[i])
 		exit(99);
 	}
 
+	if ((*f == '/' || *f == '%') && (*f[3] == '0'))
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
 	c = f(a, b);
 	
 	printf("%d\n", c);
