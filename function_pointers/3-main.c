@@ -24,18 +24,13 @@ int main(int argc, char *argv[])
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
+
 	f = get_op_func(argv[2]);
 	
 	if (f == NULL)
 	{
 		printf("Error\n");
 		exit(99);
-	}
-
-	if ((*ch == '/' || *ch == '%') && (*argv[3] == '0'))
-	{
-		printf("Error\n");
-		exit(100);
 	}
 
 	c = f(a, b);
