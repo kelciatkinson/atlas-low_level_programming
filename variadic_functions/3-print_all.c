@@ -6,7 +6,7 @@
  * print_all- here is a description
  *
  * @format: here is a parameter
- * 
+ *
  * Return: void
  */
 
