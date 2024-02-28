@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 {
 	int a, b, c;
 	int (*f)(int, int);
-	char *get_op;
+	char *char;
 
 	if (argc != 4)
 	{
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((*f == '/' || *f == '%') && (*argv[3] == '0'))
+	if ((*char == '/' || *char == '%') && (*argv[3] == '0'))
 	{
 		printf("Error\n");
 		exit(100);
