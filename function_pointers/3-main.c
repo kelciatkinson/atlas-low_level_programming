@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
 {
 	int a, b, c;
 	int (*f)(int, int);
+	char *get_op;
 
 	if (argc != 4)
 	{
@@ -31,12 +32,13 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((*f == '/' || *f == '%') && (*f[3] == '0'))
+	if ((*get_op == '/' || *get_op == '%') && (*argv[3] == '0'))
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
+	f = get_op_func(get_op);
 	c = f(a, b);
 	
 	printf("%d\n", c);
