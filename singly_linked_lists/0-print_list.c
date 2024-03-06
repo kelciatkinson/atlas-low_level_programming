@@ -10,7 +10,9 @@
 
 size_t print_list(const list_t *h)
 {
-	if (str == NULL)
+	int num_nodes = 0;
+
+	if (*str == NULL)
 	{
 		printf("[0] (nil)");
 	}
