@@ -10,12 +10,16 @@
 
 size_t print_list(const list_t *h)
 {
-	int num_nodes = 0;
+	int count = 0;
+	const list_t *new;
 
-	if (*str == NULL)
+	if (new == NULL)
 	{
 		printf("[0] (nil)");
 	}
-	printf("");
-	return (num_nodes);
+	while (new != NULL)
+	{
+		printf("")
+	}
+	return (count);
 }
