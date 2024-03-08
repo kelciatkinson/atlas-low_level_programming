@@ -12,6 +12,7 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
+	char *temp;
 	list_t *new;
 
 	if (head == NULL)
@@ -33,8 +34,9 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	strcpy(new->head, head);
-	strcpy(new->str, str);
+	strcpy(new->str, temp);
+	strcpy(new->len, len);
+	
 	
 	new->next = *head;
 
