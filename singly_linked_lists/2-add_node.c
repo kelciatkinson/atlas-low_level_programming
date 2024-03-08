@@ -11,7 +11,33 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	if (list_t== NULL)
+	if (head == NULL)
 		return (NULL);
-	return (address of new node);
+
+	list_t *new = NULL;
+	
+	new = malloc(sizeof(list_t));
+
+	if (new == NULL)
+		return (NULL);
+
+	new->head = malloc(strlen(head) + 1);
+	new->str = malloc(strlen(str) + 1);
+
+	if (new->head == NULL || new->str == NULL)
+	{
+		free(new->head);
+		free(new->str);
+		free(new);
+		return (NULL);
+	}
+
+	strcpy(new->head, head);
+	strcpy(new->str, str);
+	
+	new->next = *head;
+
+	*head = new;
+	
+	return (*head);
 }
