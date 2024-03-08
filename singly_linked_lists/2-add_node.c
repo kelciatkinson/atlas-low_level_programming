@@ -1,5 +1,6 @@
 #include "lists.h"
 
+
 /**
  * add_node- here is a description
  *
@@ -21,12 +22,12 @@ list_t *add_node(list_t **head, const char *str)
 	if (new == NULL)
 		return (NULL);
 
-	new->head = malloc(strlen(head) + 1);
+	new->head = malloc(strlen(len) + 1);
 	new->str = malloc(strlen(str) + 1);
 
-	if (new->head == NULL || new->str == NULL)
+	if (new->len == NULL || new->str == NULL)
 	{
-		free(new->head);
+		free(new->len);
 		free(new->str);
 		free(new);
 		return (NULL);
