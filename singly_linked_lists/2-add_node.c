@@ -29,13 +29,6 @@ list_t *add_node(list_t **head, const char *str)
 
 	
 
-	if (new->len == NULL || new->str == NULL)
-	{
-		free(new->len);
-		free(new->str);
-		free(new);
-		return (NULL);
-	}
 
 	strcpy(new->str, temp);
 	strcpy(new->len, len);
