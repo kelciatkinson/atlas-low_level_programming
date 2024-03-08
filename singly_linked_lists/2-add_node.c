@@ -29,12 +29,8 @@ list_t *add_node(list_t **head, const char *str)
 	}
 
 	
-
-
-	strcpy(new->str, temp);
-	strcpy(new->len, len);
-	
-	
+	new->str = temp;
+	new->len = len;
 	new->next = *head;
 
 	*head = new;
