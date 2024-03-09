@@ -3,7 +3,7 @@
 
 /**
  * free_list- here is a description
- * 
+ *
  * @head: here is a parameter
  *
  * Return: void
