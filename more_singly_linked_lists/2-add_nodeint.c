@@ -15,7 +15,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	listint_t *new;
 	int len;
 
-	new = malloc(sizeof(list_t));
+	new = malloc(sizeof(listint_t));
 
 	temp = strdup(str);
 
