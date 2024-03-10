@@ -3,7 +3,8 @@
 
 #include <unistd.h>
 #include <stdio.h>
-#include <
+#include <stdlib.h>
+
 /**
  * struct listint_s - singly linked list
  * @n: integer
