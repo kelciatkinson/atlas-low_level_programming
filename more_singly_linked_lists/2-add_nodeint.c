@@ -28,7 +28,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		return (NULL);
 	}
 
-	for (len = 0; str[len])
+	for (len = 0; head[len])
 		len++;
 
 	new->str = temp;
