@@ -6,7 +6,7 @@
  * @head: here is a parameter
  * @n: here is another parameter
  *
- * Return: new 
+ * Return: new
  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
