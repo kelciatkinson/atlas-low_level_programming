@@ -6,13 +6,13 @@
  * @head: here is a parameter
  * @n: here is another parameter
  *
- * Return: 
+ * Return: new 
  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *new;
-	listint_t *last;
+	listint_t *temp = *head;
 
 	new = malloc(sizeof(listint_t));
 	while (new == NULL)
@@ -26,6 +26,11 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		*head = new;
 		return (new);
 	}
+
+	while (temp->next)
+		temp = temp->next;
+
+	temp->next = new;
 
 	return (new);
 }
