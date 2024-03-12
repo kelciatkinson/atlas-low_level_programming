@@ -51,13 +51,15 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
  *
  * @head: here is a parameter
  * @n: here is another parameter
+ *
+ * Return: node
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *node = malloc(sizeof(listint_t));
 
-	if (!node)
+	if (node == NULL)
 		return (NULL);
 
 	node->n = n;
