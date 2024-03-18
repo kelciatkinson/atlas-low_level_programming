@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * delete_dnodeint- here is a description
+ * delete_dnodeint_at_index- here is a description
  *
  * @head: here is a parameter
  * @index: here is another parameter
