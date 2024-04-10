@@ -1,0 +1,1 @@
+Search Algorithms for Atlas School curriculum
